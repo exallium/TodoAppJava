@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TodoJavaApp</string>
+    <string name="add_new">Add TODO...</string>
+</resources>
