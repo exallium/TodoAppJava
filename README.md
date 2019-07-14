@@ -15,7 +15,7 @@ All of the above are distributed by Google.
 
 Robolectric is utilized for Unit Testing, which is technically third party, but this is only touching my tests, and is recommended by Google.
 
-## Architecture
+## Architecture & Techniques
 
 The Application has a very simple architecture, based on Clean design principles. Basically, the primary goal was to make sure my dependency arrows were always pointing in the right direction.
 
@@ -27,6 +27,7 @@ The Application has a very simple architecture, based on Clean design principles
 1. In our case, this contract gets a Dao to communicate with the Database, and has access to AsyncTask implementations to do work off of the foreground thread.
 1. By Default, AsyncTask runs tasks in a Serialized fashion, so we don't need to worry about maintaining our own job queue.
 1. All of these pieces are strung together utilizing Dagger (see the di package)
+1. TodoListItems are Immutable. In order to manipulate one, you must utilize buildUpon. This ensures that you don't unintentionally overwrite anything, eliminates some multithreading concerns, and makes TodoListItem objects easier to reason about.
 
 ## Notes
 
