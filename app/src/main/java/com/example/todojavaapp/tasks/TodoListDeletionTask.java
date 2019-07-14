@@ -10,12 +10,12 @@ import com.example.todojavaapp.utils.Action;
  * Deletes the given items, and then runs the given Action on the
  * Main thread.
  */
-public class TodoListDeletionTask extends AsyncTask<TodoListItem, Void, Void> {
+class TodoListDeletionTask extends AsyncTask<TodoListItem, Void, Void> {
 
     private final TodoListDao todoListDao;
     private final Action onPostExecuteAction;
 
-    public TodoListDeletionTask(TodoListDao todoListDao, Action onPostExecuteAction) {
+    TodoListDeletionTask(TodoListDao todoListDao, Action onPostExecuteAction) {
         this.todoListDao = todoListDao;
         this.onPostExecuteAction = onPostExecuteAction;
     }

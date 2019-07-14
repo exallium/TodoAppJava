@@ -8,11 +8,11 @@ import com.example.todojavaapp.data.TodoListItem;
 /**
  * Ensures that at least one TodoListItem exists in the database.
  */
-public class TodoListInitializerTask extends AsyncTask<Void, Void, Void> {
+class TodoListInitializerTask extends AsyncTask<Void, Void, Void> {
 
     private final TodoListDao todoListDao;
 
-    public TodoListInitializerTask(TodoListDao todoListDao) {
+    TodoListInitializerTask(TodoListDao todoListDao) {
         this.todoListDao = todoListDao;
     }
 

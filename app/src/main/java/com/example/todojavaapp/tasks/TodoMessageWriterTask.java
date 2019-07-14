@@ -12,12 +12,12 @@ import java.util.Set;
 /**
  * Updates the Database with the given TodoListItems.
  */
-public class TodoMessageWriterTask extends AsyncTask<TodoListItem, Void, Void> {
+class TodoMessageWriterTask extends AsyncTask<TodoListItem, Void, Void> {
 
     private final TodoListDao todoListDao;
     private static Set<Long> viewedIds = new HashSet<>();
 
-    public TodoMessageWriterTask(TodoListDao todoListDao) {
+    TodoMessageWriterTask(TodoListDao todoListDao) {
         this.todoListDao = todoListDao;
     }
 
