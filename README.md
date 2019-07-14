@@ -33,3 +33,6 @@ The Application has a very simple architecture, based on Clean design principles
 
 * Please note that this is just an example implementation. There are a million ways to write an Android application, and a lot of them are good enough. This is not and will not be intended for any kind of actual app release.
 * Normally, I would break things out into Feature packages. Given that this was just a single screen, I decided that this was unnecessary.
+* I love Kotlin, and Rx, and don't mind Mockito (though I think it's very overutilized). So many Todo apps exist with this tech. I wanted to build something simple without using these things.
+* I'm not out here to prove anything (sorry if that seems defensive, it really isn't). As stated, I love all the amazing third party libs that exist, I just decided to try something different.
+* If you're a new Android developer, I hope you find this useful. Doing it this way is great to see what Android gives you right out of the box, and can help you appreciate things like Retrofit, Kotlin, ReactiveX, Coroutines, etc. when you've built up your knowledge base and can really see what value they add for you.
